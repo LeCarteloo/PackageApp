@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  File created - œroda-czerwca-03-2020   
+--  File created - pi¹tek-czerwca-12-2020   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Sequence CENY_SEQ
@@ -15,22 +15,22 @@
 --  DDL for Sequence ODBIORCA_SEQ
 --------------------------------------------------------
 
-   CREATE SEQUENCE  "C##FILIP"."ODBIORCA_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 161 CACHE 20 NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;
+   CREATE SEQUENCE  "C##FILIP"."ODBIORCA_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 181 CACHE 20 NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;
 --------------------------------------------------------
 --  DDL for Sequence POJAZDY_SEQ
 --------------------------------------------------------
 
-   CREATE SEQUENCE  "C##FILIP"."POJAZDY_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 61 CACHE 20 NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;
+   CREATE SEQUENCE  "C##FILIP"."POJAZDY_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 81 CACHE 20 NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;
 --------------------------------------------------------
 --  DDL for Sequence PRZESYLKA_SEQ
 --------------------------------------------------------
 
-   CREATE SEQUENCE  "C##FILIP"."PRZESYLKA_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 141 CACHE 20 NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;
+   CREATE SEQUENCE  "C##FILIP"."PRZESYLKA_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 161 CACHE 20 NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;
 --------------------------------------------------------
 --  DDL for Sequence PRZESYLKI_INFO_SEQ
 --------------------------------------------------------
 
-   CREATE SEQUENCE  "C##FILIP"."PRZESYLKI_INFO_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 141 CACHE 20 NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;
+   CREATE SEQUENCE  "C##FILIP"."PRZESYLKI_INFO_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 161 CACHE 20 NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;
 --------------------------------------------------------
 --  DDL for Sequence PRZEWOZ_INFO_SEQ
 --------------------------------------------------------
@@ -60,7 +60,7 @@
 --  DDL for Sequence UZYTKOWNICY_SEQ1
 --------------------------------------------------------
 
-   CREATE SEQUENCE  "C##FILIP"."UZYTKOWNICY_SEQ1"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 61 CACHE 20 NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;
+   CREATE SEQUENCE  "C##FILIP"."UZYTKOWNICY_SEQ1"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 81 CACHE 20 NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;
 --------------------------------------------------------
 --  DDL for Sequence UZYTKOWNIK_KLIENT_SEQ
 --------------------------------------------------------
@@ -70,7 +70,7 @@
 --  DDL for Sequence UZYTKOWNIK_KLIENT_SEQ1
 --------------------------------------------------------
 
-   CREATE SEQUENCE  "C##FILIP"."UZYTKOWNIK_KLIENT_SEQ1"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 81 CACHE 20 NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;
+   CREATE SEQUENCE  "C##FILIP"."UZYTKOWNIK_KLIENT_SEQ1"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 101 CACHE 20 NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;
 --------------------------------------------------------
 --  DDL for Sequence UZYTKOWNIK_PRACOWNIK_SEQ
 --------------------------------------------------------
@@ -293,23 +293,23 @@ Insert into C##FILIP.FUNKCJA (ID_FUNKCJA,FUNKCJA) values ('3','Klient');
 Insert into C##FILIP.FUNKCJA (ID_FUNKCJA,FUNKCJA) values ('4','Kurier');
 REM INSERTING into C##FILIP.ODBIORCA
 SET DEFINE OFF;
-Insert into C##FILIP.ODBIORCA (ID_ODBIORCA,IMIE,NAZWISKO,PESEL,KRAJ,MIASTO,ADRES,NR_TEL) values ('141','Filip','Papiernik','12345678911','Polska','Rzeszów','ul. Pigonia 1','604058933');
-Insert into C##FILIP.ODBIORCA (ID_ODBIORCA,IMIE,NAZWISKO,PESEL,KRAJ,MIASTO,ADRES,NR_TEL) values ('142','Filip','Papiernik','12345678913','Polska','Rzeszów','ul. Pigonia 1','604058933');
-Insert into C##FILIP.ODBIORCA (ID_ODBIORCA,IMIE,NAZWISKO,PESEL,KRAJ,MIASTO,ADRES,NR_TEL) values ('101','Filip','Papiernik','12345678910','Polska','Rzeszów','ul. Pigonia 1','604058933');
+Insert into C##FILIP.ODBIORCA (ID_ODBIORCA,IMIE,NAZWISKO,PESEL,KRAJ,MIASTO,ADRES,NR_TEL) values ('161','Andrzej','Kowalski','12345678933','Niemcy','Berlin','Ul.Ber','333555677');
 REM INSERTING into C##FILIP.POJAZDY
 SET DEFINE OFF;
-Insert into C##FILIP.POJAZDY (ID_POJAZD,MARKA,TYP,MODEL) values ('21','Mercedes','Transport paczek','3Y');
 Insert into C##FILIP.POJAZDY (ID_POJAZD,MARKA,TYP,MODEL) values ('3','Scania','Transport paczek','Short');
 Insert into C##FILIP.POJAZDY (ID_POJAZD,MARKA,TYP,MODEL) values ('4','Teslaa','Transport paczek','Semi Truckk');
-Insert into C##FILIP.POJAZDY (ID_POJAZD,MARKA,TYP,MODEL) values ('5','Cat','Transport paczek','Cargo');
-Insert into C##FILIP.POJAZDY (ID_POJAZD,MARKA,TYP,MODEL) values ('22','Mercedes','Transport osób','3YY');
-Insert into C##FILIP.POJAZDY (ID_POJAZD,MARKA,TYP,MODEL) values ('1','Mercedes','Transport osób','3Y');
+Insert into C##FILIP.POJAZDY (ID_POJAZD,MARKA,TYP,MODEL) values ('1','Mercedes','Transport osób','3Yy');
+Insert into C##FILIP.POJAZDY (ID_POJAZD,MARKA,TYP,MODEL) values ('66','Mercedes','Transport osób','3X');
 REM INSERTING into C##FILIP.PRZESYLKA
 SET DEFINE OFF;
-Insert into C##FILIP.PRZESYLKA (ID_PRZESYLKA,ID_ODBIORCA,ID_KLIENT,ID_TRANSPORT,NAZWA_PRZESYLKI,STATUS,KOSZT,ID_PRACOWNIK) values ('101','101','141','101','TV 40'''' Szklane','Dostarczona','110','122');
+Insert into C##FILIP.PRZESYLKA (ID_PRZESYLKA,ID_ODBIORCA,ID_KLIENT,ID_TRANSPORT,NAZWA_PRZESYLKI,STATUS,KOSZT,ID_PRACOWNIK) values ('143','161','88','143','Kanapa','Dostarczona','365','122');
+Insert into C##FILIP.PRZESYLKA (ID_PRZESYLKA,ID_ODBIORCA,ID_KLIENT,ID_TRANSPORT,NAZWA_PRZESYLKI,STATUS,KOSZT,ID_PRACOWNIK) values ('142','161','141','142','Komputer','Rejestracja','285','122');
 REM INSERTING into C##FILIP.PRZESYLKI_INFO
 SET DEFINE OFF;
-Insert into C##FILIP.PRZESYLKI_INFO (ID_TRANSPORT,TYP_PRZESYLKI,ROZMIAR,WAGA,UBEZPIECZENIE,ID_POJAZD) values ('101','Krajowy','3x3x3','15','T','4');
+Insert into C##FILIP.PRZESYLKI_INFO (ID_TRANSPORT,TYP_PRZESYLKI,ROZMIAR,WAGA,UBEZPIECZENIE,ID_POJAZD) values ('141','Krajowy','5x5x5','35','T','3');
+Insert into C##FILIP.PRZESYLKI_INFO (ID_TRANSPORT,TYP_PRZESYLKI,ROZMIAR,WAGA,UBEZPIECZENIE,ID_POJAZD) values ('143','Miêdzynarodowy','5x5x5','30','T','4');
+Insert into C##FILIP.PRZESYLKI_INFO (ID_TRANSPORT,TYP_PRZESYLKI,ROZMIAR,WAGA,UBEZPIECZENIE,ID_POJAZD) values ('101','Krajowy','3x3x3','15','N','4');
+Insert into C##FILIP.PRZESYLKI_INFO (ID_TRANSPORT,TYP_PRZESYLKI,ROZMIAR,WAGA,UBEZPIECZENIE,ID_POJAZD) values ('142','Miêdzynarodowy','2x2x2','5','T','3');
 REM INSERTING into C##FILIP.PRZEWOZ_INFO
 SET DEFINE OFF;
 Insert into C##FILIP.PRZEWOZ_INFO (ID_PRZEWOZ,ILOSC_OSOB,UBEZPIECZENIE,ID_POJAZD,KRAJ,MIASTO,ADRES,DATA_WYJAZDU,DATA_POWROTU) values ('61','3','T','1','Polska','Rzeszów','ul. Pigonia 1',to_date('20/08/01','RR/MM/DD'),to_date('20/07/28','RR/MM/DD'));
@@ -317,18 +317,20 @@ REM INSERTING into C##FILIP.PRZEWOZ_OSOB
 SET DEFINE OFF;
 REM INSERTING into C##FILIP.UZYTKOWNICY
 SET DEFINE OFF;
+Insert into C##FILIP.UZYTKOWNICY (ID_UZYTKOWNIK,LOGIN,HASLO,ID_FUNKCJA) values ('74','Jan','Jan','3');
 Insert into C##FILIP.UZYTKOWNICY (ID_UZYTKOWNIK,LOGIN,HASLO,ID_FUNKCJA) values ('281','klient','klient','3');
 Insert into C##FILIP.UZYTKOWNICY (ID_UZYTKOWNIK,LOGIN,HASLO,ID_FUNKCJA) values ('283','pracownik','pracownik','2');
 Insert into C##FILIP.UZYTKOWNICY (ID_UZYTKOWNIK,LOGIN,HASLO,ID_FUNKCJA) values ('284','kurier','kurier','4');
 Insert into C##FILIP.UZYTKOWNICY (ID_UZYTKOWNIK,LOGIN,HASLO,ID_FUNKCJA) values ('282','admin','admin','1');
 REM INSERTING into C##FILIP.UZYTKOWNIK_KLIENT
 SET DEFINE OFF;
-Insert into C##FILIP.UZYTKOWNIK_KLIENT (ID_KLIENT,IMIE,NAZWISKO,PESEL,NR_TEL,ADRES,ID_UZYTKOWNIK,MIASTO,KRAJ) values ('141','Filip','Papiernik','12345678910','604058922',' ul. Rynek 1','281','Rzeszów','Polska');
+Insert into C##FILIP.UZYTKOWNIK_KLIENT (ID_KLIENT,IMIE,NAZWISKO,PESEL,NR_TEL,ADRES,ID_UZYTKOWNIK,MIASTO,KRAJ) values ('141','Filip','Papiernik','12345678950','604333231','Ul. Wictoria 9','281','Berlin','Niemcy');
+Insert into C##FILIP.UZYTKOWNIK_KLIENT (ID_KLIENT,IMIE,NAZWISKO,PESEL,NR_TEL,ADRES,ID_UZYTKOWNIK,MIASTO,KRAJ) values ('88','Filip','Kowalski','12345678910','604333545','ul. Veza 55','74','Berlin','Niemcy');
 REM INSERTING into C##FILIP.UZYTKOWNIK_PRACOWNIK
 SET DEFINE OFF;
-Insert into C##FILIP.UZYTKOWNIK_PRACOWNIK (ID_PRACOWNIK,IMIE,NAZWISKO,PESEL,NR_TEL,ID_UZYTKOWNIK) values ('122','Filip','Papiernik','12345678910','604058932','283');
+Insert into C##FILIP.UZYTKOWNIK_PRACOWNIK (ID_PRACOWNIK,IMIE,NAZWISKO,PESEL,NR_TEL,ID_UZYTKOWNIK) values ('122','Filip','Papiernik','12345678910','604058936','283');
 Insert into C##FILIP.UZYTKOWNIK_PRACOWNIK (ID_PRACOWNIK,IMIE,NAZWISKO,PESEL,NR_TEL,ID_UZYTKOWNIK) values ('123','Filip','Papiernik','12345678911','604058333','284');
-Insert into C##FILIP.UZYTKOWNIK_PRACOWNIK (ID_PRACOWNIK,IMIE,NAZWISKO,PESEL,NR_TEL,ID_UZYTKOWNIK) values ('121','Filip','Papiernik','12345678912','604058913','282');
+Insert into C##FILIP.UZYTKOWNIK_PRACOWNIK (ID_PRACOWNIK,IMIE,NAZWISKO,PESEL,NR_TEL,ID_UZYTKOWNIK) values ('121','Filip','Papiernik','12345678912','604058666','282');
 --------------------------------------------------------
 --  DDL for Index CENY_PK
 --------------------------------------------------------
@@ -682,7 +684,7 @@ ALTER TRIGGER "C##FILIP"."PESEL_EXIST_PRACOWNIK" ENABLE;
 --  DDL for Trigger PESEL_EXSIT
 --------------------------------------------------------
 
-  CREATE OR REPLACE EDITIONABLE TRIGGER "C##FILIP"."PESEL_EXSIT" BEFORE INSERT OR UPDATE ON UZYTKOWNIK_KLIENT
+  CREATE OR REPLACE EDITIONABLE TRIGGER "C##FILIP"."PESEL_EXSIT" BEFORE INSERT ON UZYTKOWNIK_KLIENT
 FOR EACH ROW
 DECLARE
 zmienna NUMBER;
@@ -711,6 +713,19 @@ end if;
 end;
 /
 ALTER TRIGGER "C##FILIP"."PESEL_TRIGGER" ENABLE;
+--------------------------------------------------------
+--  DDL for Trigger PESEL_TRIGGER_KLIENT
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE TRIGGER "C##FILIP"."PESEL_TRIGGER_KLIENT" BEFORE UPDATE ON UZYTKOWNIK_KLIENT
+FOR EACH ROW
+begin
+IF length(:new.PESEL) != 11 THEN
+RAISE_APPLICATION_ERROR( -20030, 'PESEL musi mieæ 11 cyfr' );
+end if;
+end;
+/
+ALTER TRIGGER "C##FILIP"."PESEL_TRIGGER_KLIENT" ENABLE;
 --------------------------------------------------------
 --  DDL for Trigger POJAZDY_TRG
 --------------------------------------------------------
@@ -1107,6 +1122,40 @@ END REJESTRACJA_KLIENT;
                                 p_nrtel IN UZYTKOWNIK_PRACOWNIK.NR_TEL%TYPE);
                                     
 END REJESTRACJA_PRACOWNIK;
+
+/
+--------------------------------------------------------
+--  DDL for Package WYPELNIJ
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE PACKAGE "C##FILIP"."WYPELNIJ" AS 
+  --admin
+  PROCEDURE wypelnij_pracownik(p_wynik OUT SYS_REFCURSOR);
+  
+  PROCEDURE wypelnij_pojazd(p_wynik OUT SYS_REFCURSOR);
+  
+  PROCEDURE wypelnij_paczki(p_wynik OUT SYS_REFCURSOR);
+  
+  PROCEDURE wypelnij_transport(p_wynik OUT SYS_REFCURSOR);
+  
+  --pracownik
+  PROCEDURE wypelnij_klient(p_wynik OUT SYS_REFCURSOR);
+  
+  PROCEDURE wypelnij_odbiorca(p_wynik OUT SYS_REFCURSOR);
+  
+  PROCEDURE wypelnij_pojazdP(p_wynik OUT SYS_REFCURSOR);
+  
+  PROCEDURE wypelnij_pojazdO(p_wynik OUT SYS_REFCURSOR);
+  
+  --kurier
+  PROCEDURE wypelnij_paczkiKurier(p_wynik OUT SYS_REFCURSOR);
+  
+  --klient
+  PROCEDURE wypelnij_transportKlient(id IN PRZEWOZ_OSOB.ID_KLIENT%TYPE, p_wynik OUT SYS_REFCURSOR);
+  
+  PROCEDURE wypelnij_paczkiKlient(id IN NUMBER, p_wynik OUT SYS_REFCURSOR);
+  
+END WYPELNIJ;
 
 /
 --------------------------------------------------------
@@ -1712,6 +1761,193 @@ BEGIN
     END;
     
 END REJESTRACJA_PRACOWNIK;
+
+/
+--------------------------------------------------------
+--  DDL for Package Body WYPELNIJ
+--------------------------------------------------------
+
+  CREATE OR REPLACE EDITIONABLE PACKAGE BODY "C##FILIP"."WYPELNIJ" AS
+
+  PROCEDURE wypelnij_pracownik(p_wynik OUT SYS_REFCURSOR) AS
+  BEGIN
+  OPEN p_wynik FOR 
+   SELECT 
+   U.ID_UZYTKOWNIK, 
+   U.LOGIN, 
+   U.HASLO, 
+   U.ID_FUNKCJA, 
+   UP.IMIE, 
+   UP.NAZWISKO, 
+   UP.PESEL, 
+   UP.NR_TEL, 
+   UP.ID_UZYTKOWNIK, 
+   F.FUNKCJA
+   FROM 
+   UZYTKOWNICY U, 
+   UZYTKOWNIK_PRACOWNIK UP, 
+   FUNKCJA F
+   WHERE U.ID_UZYTKOWNIK = UP.ID_UZYTKOWNIK
+   AND U.ID_FUNKCJA = F.ID_FUNKCJA;
+    NULL;
+  END wypelnij_pracownik;
+  
+  PROCEDURE wypelnij_pojazd(p_wynik OUT SYS_REFCURSOR) AS
+  BEGIN
+  OPEN p_wynik FOR 
+   SELECT 
+   P.*
+   FROM 
+   POJAZDY P;
+    NULL;
+  END wypelnij_pojazd;
+  
+  PROCEDURE wypelnij_paczki(p_wynik OUT SYS_REFCURSOR) AS
+  BEGIN
+  OPEN p_wynik FOR 
+   SELECT 
+   PI.ID_TRANSPORT,
+   P.ID_TRANSPORT, 
+   PI.TYP_PRZESYLKI, 
+   PI.ROZMIAR, 
+   PI.WAGA, 
+   PI.UBEZPIECZENIE, 
+   P.NAZWA_PRZESYLKI, 
+   P.STATUS, 
+   P.KOSZT
+   FROM 
+   PRZESYLKI_INFO PI,
+   PRZESYLKA P
+   WHERE PI.ID_TRANSPORT = P.ID_TRANSPORT;
+    NULL;
+  END wypelnij_paczki;
+  
+  PROCEDURE wypelnij_transport(p_wynik OUT SYS_REFCURSOR) AS
+  BEGIN
+  OPEN p_wynik FOR 
+   SELECT 
+   PI.KRAJ,
+   PI.MIASTO,
+   PI.ADRES,
+   PI.DATA_WYJAZDU,
+   PI.DATA_POWROTU, 
+   PI.ILOSC_OSOB, 
+   PI.UBEZPIECZENIE, 
+   P.KOSZT, 
+   PI.ID_PRZEWOZ
+   FROM 
+   PRZEWOZ_INFO PI, 
+   PRZEWOZ_OSOB P
+   WHERE PI.ID_PRZEWOZ = P.ID_PRZEWOZ;
+    NULL;
+  END wypelnij_transport;
+  
+  PROCEDURE wypelnij_klient(p_wynik OUT SYS_REFCURSOR) AS
+  BEGIN
+  OPEN p_wynik FOR 
+   SELECT 
+   U.*
+   FROM 
+   UZYTKOWNIK_KLIENT U;
+    NULL;
+  END wypelnij_klient;
+  
+  PROCEDURE wypelnij_odbiorca(p_wynik OUT SYS_REFCURSOR) AS
+  BEGIN
+  OPEN p_wynik FOR 
+   SELECT 
+   O.*
+   FROM 
+   ODBIORCA O;
+    NULL;
+  END wypelnij_odbiorca;
+  
+  PROCEDURE wypelnij_pojazdP(p_wynik OUT SYS_REFCURSOR) AS
+  BEGIN
+  OPEN p_wynik FOR 
+   SELECT 
+   P.*
+   FROM 
+   POJAZDY P
+   WHERE TYP = 'Transport paczek';
+    NULL;
+  END wypelnij_pojazdP;
+
+  PROCEDURE wypelnij_pojazdO(p_wynik OUT SYS_REFCURSOR) AS
+  BEGIN
+  OPEN p_wynik FOR 
+   SELECT 
+   P.*
+   FROM 
+   POJAZDY P
+   WHERE TYP = 'Transport osób';
+    NULL;
+  END wypelnij_pojazdO;
+  
+  PROCEDURE wypelnij_paczkiKurier(p_wynik OUT SYS_REFCURSOR) AS
+  BEGIN
+  OPEN p_wynik FOR 
+   SELECT 
+   PI.ID_TRANSPORT,
+   P.ID_TRANSPORT, 
+   PI.TYP_PRZESYLKI, 
+   PI.ROZMIAR, 
+   PI.WAGA, 
+   PI.UBEZPIECZENIE, 
+   P.NAZWA_PRZESYLKI, 
+   P.STATUS, 
+   P.KOSZT
+   FROM 
+   PRZESYLKI_INFO PI,
+   PRZESYLKA P
+  WHERE PI.ID_TRANSPORT = P.ID_TRANSPORT
+  AND NOT P.STATUS = 'Dostarczona';
+    NULL;
+  END wypelnij_paczkiKurier;
+  
+  PROCEDURE wypelnij_transportKlient(id IN PRZEWOZ_OSOB.ID_KLIENT%TYPE, p_wynik OUT SYS_REFCURSOR) AS
+  BEGIN
+  OPEN p_wynik FOR 
+   SELECT 
+   PI.KRAJ,
+   PI.MIASTO,
+   PI.ADRES,
+   PI.DATA_WYJAZDU,
+   PI.DATA_POWROTU, 
+   PI.ILOSC_OSOB, 
+   PI.UBEZPIECZENIE, 
+   P.KOSZT, 
+   PI.ID_PRZEWOZ
+   FROM 
+   PRZEWOZ_INFO PI, 
+   PRZEWOZ_OSOB P
+   WHERE PI.ID_PRZEWOZ = P.ID_PRZEWOZ
+   AND P.ID_KLIENT = id;
+    NULL;
+  END wypelnij_transportKlient;
+  
+  PROCEDURE wypelnij_paczkiKlient(id IN NUMBER, p_wynik OUT SYS_REFCURSOR) AS
+  BEGIN
+  OPEN p_wynik FOR 
+   SELECT 
+   PI.ID_TRANSPORT,
+   P.ID_TRANSPORT, 
+   PI.TYP_PRZESYLKI, 
+   PI.ROZMIAR, 
+   PI.WAGA, 
+   PI.UBEZPIECZENIE, 
+   P.NAZWA_PRZESYLKI, 
+   P.STATUS, 
+   P.KOSZT
+   FROM 
+   PRZESYLKI_INFO PI, 
+   PRZESYLKA P
+   WHERE PI.ID_TRANSPORT = P.ID_TRANSPORT
+   AND P.ID_KLIENT = id;
+    NULL;
+  END wypelnij_paczkiKlient;
+  
+END WYPELNIJ;
 
 /
 --------------------------------------------------------
